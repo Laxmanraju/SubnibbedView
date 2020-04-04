@@ -16,6 +16,10 @@
 		9C65C05F243919800005B9E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C65C05D243919800005B9E9 /* LaunchScreen.storyboard */; };
 		9C65C06A243919800005B9E9 /* testTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C65C069243919800005B9E9 /* testTests.swift */; };
 		9C65C075243919800005B9E9 /* testUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C65C074243919800005B9E9 /* testUITests.swift */; };
+		9C65C0842439199A0005B9E9 /* DetailOptionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C65C0822439199A0005B9E9 /* DetailOptionView.xib */; };
+		9C65C0852439199A0005B9E9 /* DetailOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C65C0832439199A0005B9E9 /* DetailOptionView.swift */; };
+		9C65C08724391A130005B9E9 /* ContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C65C08624391A130005B9E9 /* ContainerView.swift */; };
+		9C65C08924391A1C0005B9E9 /* ContainerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C65C08824391A1C0005B9E9 /* ContainerView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,10 @@
 		9C65C070243919800005B9E9 /* testUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C65C074243919800005B9E9 /* testUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testUITests.swift; sourceTree = "<group>"; };
 		9C65C076243919800005B9E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C65C0822439199A0005B9E9 /* DetailOptionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailOptionView.xib; sourceTree = "<group>"; };
+		9C65C0832439199A0005B9E9 /* DetailOptionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailOptionView.swift; sourceTree = "<group>"; };
+		9C65C08624391A130005B9E9 /* ContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerView.swift; sourceTree = "<group>"; };
+		9C65C08824391A1C0005B9E9 /* ContainerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContainerView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +113,10 @@
 				9C65C0512439197F0005B9E9 /* SceneDelegate.swift */,
 				9C65C0532439197F0005B9E9 /* ViewController.swift */,
 				9C65C0552439197F0005B9E9 /* Main.storyboard */,
+				9C65C08624391A130005B9E9 /* ContainerView.swift */,
+				9C65C08824391A1C0005B9E9 /* ContainerView.xib */,
+				9C65C0832439199A0005B9E9 /* DetailOptionView.swift */,
+				9C65C0822439199A0005B9E9 /* DetailOptionView.xib */,
 				9C65C05B243919800005B9E9 /* Assets.xcassets */,
 				9C65C05D243919800005B9E9 /* LaunchScreen.storyboard */,
 				9C65C060243919800005B9E9 /* Info.plist */,
@@ -235,6 +247,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C65C0842439199A0005B9E9 /* DetailOptionView.xib in Resources */,
+				9C65C08924391A1C0005B9E9 /* ContainerView.xib in Resources */,
 				9C65C05F243919800005B9E9 /* LaunchScreen.storyboard in Resources */,
 				9C65C05C243919800005B9E9 /* Assets.xcassets in Resources */,
 				9C65C0572439197F0005B9E9 /* Main.storyboard in Resources */,
@@ -264,6 +278,8 @@
 			files = (
 				9C65C0542439197F0005B9E9 /* ViewController.swift in Sources */,
 				9C65C05A2439197F0005B9E9 /* test.xcdatamodeld in Sources */,
+				9C65C08724391A130005B9E9 /* ContainerView.swift in Sources */,
+				9C65C0852439199A0005B9E9 /* DetailOptionView.swift in Sources */,
 				9C65C0502439197F0005B9E9 /* AppDelegate.swift in Sources */,
 				9C65C0522439197F0005B9E9 /* SceneDelegate.swift in Sources */,
 			);

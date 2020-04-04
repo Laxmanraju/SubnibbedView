@@ -6,4 +6,12 @@
 //  Copyright © 2020 dfs. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class ContainerView: UIView {
+    @IBOutlet weak var detail: DetailOptionView!
+
+    func loadUI(){
+        print(detail.imageView)
+    }
+}

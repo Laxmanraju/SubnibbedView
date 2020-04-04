@@ -8,11 +8,6 @@
 
 import UIKit
 
-enum DetailOptionType{
-    case takePhoto
-    case photoLibrary
-}
-
 @IBDesignable
 class DetailOptionView: UIView {
 
@@ -23,47 +18,10 @@ class DetailOptionView: UIView {
         // Drawing code
     }
     */
-    
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        initialize()
-    }
-    
-    required public init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-          if self.subviews.count == 0{
-            initialize()
 
-        }
-    }
-    
-    func initialize() {
-        guard let view = loadViewFromNib() else { return }
-    }
-    
-    private func loadViewFromNib() -> UIView? {
-           let bundle = Bundle(for: type(of: self))
-        let nib = UINib(nibName: "DetailOptionView", bundle: bundle)
-           return nib.instantiate(withOwner: self, options: nil).first as? UIView
-       }
     
     @IBOutlet weak var roundedView: UIView!
     @IBOutlet  weak var imageView: UIImageView!
     @IBOutlet  weak var optionLabel: UILabel!
-    var optionType: DetailOptionType?
-    
-    func configureForType(_ type: DetailOptionType){
-        self.optionType = type
-        switch optionType {
-        case .takePhoto:
-            imageView.image = UIImage(systemName: Constants.ImageNames.cameraFill)
-            break
-        case .photoLibrary:
-//             imageView.image = UIImage(systemName: Constants.ImageNames.cameraFill)
-            break
-        default:
-            break
-        }
-    }
-  
+   
 }
