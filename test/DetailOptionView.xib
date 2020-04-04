@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailOptionView" customModule="CouponBox" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DetailOptionView" customModule="CouponBox" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="132" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LPu-4e-bMA">
+                    <rect key="frame" x="5" y="0.0" width="122" height="35"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="camera.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="zWq-tU-Ceq">
+                            <rect key="frame" x="46" y="3" width="30" height="28"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="JzT-gC-YAi"/>
+                                <constraint firstAttribute="width" constant="30" id="Uzo-gk-J2k"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="zWq-tU-Ceq" firstAttribute="centerY" secondItem="LPu-4e-bMA" secondAttribute="centerY" id="4QZ-F0-uEw"/>
+                        <constraint firstItem="zWq-tU-Ceq" firstAttribute="centerX" secondItem="LPu-4e-bMA" secondAttribute="centerX" id="cBm-bE-c18"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Take Photo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hSY-j4-JFQ">
+                    <rect key="frame" x="39.5" y="36" width="53.5" height="13"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="LPu-4e-bMA" secondAttribute="bottom" constant="15" id="LqV-Dl-AUu"/>
+                <constraint firstItem="hSY-j4-JFQ" firstAttribute="top" secondItem="LPu-4e-bMA" secondAttribute="bottom" constant="1" id="XrF-Lv-Sge"/>
+                <constraint firstItem="hSY-j4-JFQ" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="a48-WZ-0Jh"/>
+                <constraint firstAttribute="trailing" secondItem="LPu-4e-bMA" secondAttribute="trailing" constant="5" id="dyK-TA-4tT"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="hSY-j4-JFQ" secondAttribute="bottom" constant="1" id="fDU-WD-1eV"/>
+                <constraint firstItem="LPu-4e-bMA" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="lWR-6M-iqK"/>
+                <constraint firstItem="LPu-4e-bMA" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="5" id="wKB-ut-no3"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="imageView" destination="zWq-tU-Ceq" id="0zO-41-0UQ"/>
+                <outlet property="optionLabel" destination="hSY-j4-JFQ" id="6RM-6X-HYK"/>
+                <outlet property="roundedView" destination="LPu-4e-bMA" id="bAB-5r-ZUM"/>
+            </connections>
+            <point key="canvasLocation" x="-88" y="148.42578710644679"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="camera.fill" catalog="system" width="64" height="48"/>
+    </resources>
+</document>
